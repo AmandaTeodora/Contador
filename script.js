@@ -1,2 +1,9 @@
+function contar() {
+    let inicio = document.getElementById('txti')
+    let fim = document.getElementById('txtf')
+    let passo = document.getElementById('txtp')
 
-Um contador é um número que usamos para contar as ocorrências de uma coisa particular. Existem muitas situações em que os contadores podem ser úteis. Podemos implementar um contador usando uma variável normal dentro de nosso código ou usando armazenamento de sessão.
+    if(inicio.value.length == 0 || fim.value.length== 0 || passo.value.lenght == 0) {
+        window.alert('[Erro] Faltam dados')
+    }
+}
