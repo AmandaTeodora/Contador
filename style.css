@@ -21,11 +21,18 @@ section{
     width: 500px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0.363);
-
+    white-space: normal;
+        
 }
+#res{
+   //* overflow: hidden;
+    white-space: nowrap;
+    text-overflow: hidden; *//
+    word-wrap: ;*//
+}
+
 footer{
     color: white;
     text-align: center;
-    font-style: italic;
-    font: normal 10pt arial;
+    font: italic 10pt arial;
 }
