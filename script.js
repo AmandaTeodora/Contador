@@ -5,9 +5,12 @@ function contar() {
     let res = document.getElementById('res')
 
     if (ini.value.length == 0 || fim.value.length == 0 || passo.value.lenght == 0) {
+        res.innerHTML = 'Impossivel contar!'
         window.alert('[Erro] Faltam dados')
+        
+
     } else {
-        res.innerHTML = ' Contando: '
+        res.innerHTML = ' Contando: <br>'
         let i = Number (ini.value)
         let f = Number (fim.value)
         let p = Number (passo.value)
@@ -18,7 +21,7 @@ function contar() {
             }
         } else {
             //contagem regressiva
-            for(let c = i; c <= f; c -= p) {
+            for(let c = i; c >= f; c -= p) {
             res.innerHTML +=  ` ${c} \u{1f449}`
             }
         }
